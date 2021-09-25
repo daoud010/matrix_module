@@ -23,4 +23,13 @@ def read_matrix(filename):
 
 
 matrix1 = Matrix(read_matrix('matrix1.txt'))
+
 matrix2 = Matrix(read_matrix('matrix2.txt'))
+
+
+try:
+    result = matrix1 + matrix2
+except:
+    print("Error: Addition not allowed.")
+else:
+    result.print()
